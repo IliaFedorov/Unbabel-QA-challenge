@@ -1,0 +1,29 @@
+***Settings***
+Library			Selenium2Library
+
+***Variables***
+${timeout}
+
+***Test Cases***
+TestCase1: Annotate task
+	[Setup]
+		Go to Annotate
+		Enter credentials
+	[Teardown] Close all browsers
+	
+
+	
+	
+	
+	
+***Keywords***
+Go to Annotate
+	Open Browser	https://staging.annotation.tools.unbabel.com/login/
+	
+Enter credentials
+	Input Text	id=username	emanuel+ilia2@unbabel.com
+	Input Text	id=password	QWERasdfZXCV1234
+	Click Element	//a[@class="unbabel-btn-round unbabel-blue btn-block"]
+	
+	
+	
