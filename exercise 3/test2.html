@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://staging.annotation.tools.unbabel.com" />
+<title>test2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test2</td></tr>
+</thead><tbody>
+
+      <tr>
+        <td>open</td>
+        <td>/</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>clickAndWait</td>
+        <td>css=button.btn-round.btn-white-home</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>id=username</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>type</td>
+        <td>id=username</td>
+        <td>emanuel+ilia2@unbabel.com</td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>id=password</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>type</td>
+        <td>id=password</td>
+        <td>QWERasdfZXCV1234</td>
+      </tr>
+    
+
+      <tr>
+        <td>clickAndWait</td>
+        <td>css=button.unbabel-btn-round.unbabel-blue.btn-block</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>clickAndWait</td>
+        <td>link=RU to EN</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>css=body > div > div > div.c-AnnotateApp__main.g-container > div.c-AnnotateApp__content > div.c-TranslationViewer.is-highlighted-glossaries.is-highlighted-annotations.is-highlighted-anonimized.is-target-active > div:nth-child(4) > div.c-TranslationViewer__panel.is-target > div > div.c-TextBlock__main > p</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>css=div.c-MarkError__errorType</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>css=body > div > div > div.c-AnnotateApp__main.g-container > div:nth-child(3) > div.c-Sidebar__item.is-active > div.c-Sidebar__panel > div > ol > li.c-MarkError__item.is-open > ol > li:nth-child(1) > div</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>type</td>
+        <td>id=majorSeverity</td>
+        <td>major</td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>id=majorSeverity</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>css=button.c-Button.c-Button--cta</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>css=body > div > div > div.c-AnnotateApp__main.g-container > div:nth-child(3) > div:nth-child(3) > div.c-Sidebar__tab</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>name=comment</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>css=body > div > div > div.c-AnnotateApp__main.g-container > div:nth-child(3) > div.c-Sidebar__item.is-active > div.c-Sidebar__panel > div > div.c-TaskFeedback__finish > button</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>css=#js-modal-footer > div > button:nth-child(2)</td>
+        <td></td>
+      </tr>
+    
+</tbody></table>
+<script>
+(function() {
+  try {
+    var evt = new CustomEvent('kantuSaveAndRunMacro', { detail: { html: document.documentElement.outerHTML } })  
+    window.dispatchEvent(evt);
+    
+    if (window.location.protocol === 'file:') {
+      var onInvokeSuccess = function () {
+        clearTimeout(timer)
+        window.removeEventListener('kantuInvokeSuccess', onInvokeSuccess)
+      }
+      var timer = setTimeout(function () {
+        alert("Error: It seems you need to enable File Access for Kantu in the extension settings.")
+      }, 2000)
+
+      window.addEventListener('kantuInvokeSuccess', onInvokeSuccess)
+    }
+  } catch (e) {
+    alert('Kantu Bookmarklet error: ' + e.toString());
+  }
+})();
+</script>
+</body>
+</html>
+  
