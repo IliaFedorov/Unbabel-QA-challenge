@@ -12,3 +12,7 @@ or
 use \directory\ robot test.txt in cmd 
 
 Button case (sign up) was the hardest to automate, occasionally it does not execute properly.
+
+
+Load Test is performed in JMeter 4.0 using JDK 10 + 
+LoadTest.Jmx
